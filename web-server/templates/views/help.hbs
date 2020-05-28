@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Help</title>
+
+  <link rel="shortcut icon" href="/img/weather.png" type="image/x-icon">
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+
+<body>
+  <div class="main-content">
+    {{>header}}
+    <p>{{helpText}}</p>
+    <p>On location input, type an address.</p>
+    <p>Example: "1121 ph"</p>
+    <p>Result:</p>
+    <p>&nbsp; &nbsp; "1121, Quezon City, Philippines"</p>
+    <p>&nbsp; &nbsp; "Partly cloudy. It is currently 28 degrees out. There is a 0.1% chance of rain."</p>
+  </div>
+
+  <a href="https://docs.mapbox.com/api/search/#forward-geocoding" target="blank">Mapbox Forward Geocoding API</a>
+  <a href="https://weatherstack.com/documentation" target="blank">WeatherStack Current Weather API</a>
+
+  {{>footer}}
+</body>
+
+</html>
